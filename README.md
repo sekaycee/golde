@@ -1,2 +1,2 @@
-# golde
-web app for managing product inventory
+# ⚜️ Golde 🪙
+Web app for managing product inventory
