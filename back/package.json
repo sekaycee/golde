@@ -1,11 +1,20 @@
 {
   "name": "golde_back",
   "version": "0.0.0",
+  "description": "inventory management system",
   "private": true,
+  "main": "server.js",
   "scripts": {
     "start": "node server",
     "dev": "nodemon server"
   },
+  "keywords": [],
+  "author": "Kay Cee",
+  "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
