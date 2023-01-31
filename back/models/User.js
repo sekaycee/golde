@@ -5,6 +5,10 @@ const userSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	},
+	name: {
+		first: String,
+		last: String
+	},
 	password: {
 		type: String,
 		required: true
@@ -16,6 +20,14 @@ const userSchema = new mongoose.Schema({
 	active: {
 		type: Boolean,
 		default: true
+	}
+}, {
+	virtuals: {
+		fullname: {
+			get() {
+				return this.name.first + ' ' + this.name.last
+			}
+		}
 	}
 })
 
