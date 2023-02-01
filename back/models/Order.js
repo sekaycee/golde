@@ -8,10 +8,22 @@ const orderSchema = new mongoose.Schema({
 		default: 0
 	},
 	date: Date,
-	products: {
-		type: [mongoose.Schema.Types.ObjectId],
-		ref: 'Product',
-	}
+	items: [{
+		product: {
+			type: mongoose.Schema.Types.ObjectId,
+			ref: 'Product'
+		},
+		price: Number,
+		quantity: Number
+	}, {
+		virtuals: {
+			subtotal: {
+				get() {
+					return this.items.price * this.items.quantity
+				}
+			}
+		}
+	}]
 }, {
 	timestamps: true
 })
