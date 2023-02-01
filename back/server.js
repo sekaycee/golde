@@ -14,6 +14,8 @@ const errorHandler = require('./middleware/errorHandler')
 
 console.log(process.env.NODE_ENV)
 
+mongoose.set('strictQuery', false)
+
 connectDB()
 
 app.use(logger)

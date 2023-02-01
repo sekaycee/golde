@@ -26,8 +26,9 @@ const productSchema = new mongoose.Schema({
 		default: 0
 	},
 	state: {
-		type: Boolean,
-		default: true
+		type: String,
+		enum: ['Active', 'Restock', 'Pending', 'Inactive']
+		default: 'Active'
 	},
 	meta: {
 		title: String,
