@@ -17,9 +17,9 @@ const orderSchema = new mongoose.Schema({
 		quantity: Number
 	}, {
 		virtuals: {
-			subtotal: {
+			total: {
 				get() {
-					return this.items.price * this.items.quantity
+					return this.price * this.quantity
 				}
 			}
 		}
