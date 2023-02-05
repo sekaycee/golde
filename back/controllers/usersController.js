@@ -47,7 +47,7 @@ const editUser = asyncHandler(async (req, res) => {
 	const { id, username, active, roles, password } = req.body
 
 	// validate data
-	if (!id || !username || !Array.isArray(roles) || !roles.length || typeof active !== 'boolean')
+	if (!id || !username || !Array.isArray(roles) || !roles?.length || typeof active !== 'boolean')
 		return res.status(400).json({ message: 'highlighted fields are required' })
 
 	// get existing user from db
