@@ -82,8 +82,8 @@ const removeUser = asyncHandler(async (req, res) => {
 	if (!id)
 		return res.status(400).json({ message: 'user id required' })
 
-	const products = await Product.findOne({ user: id }).lean().exec()
-	if (products?.length)
+	const product = await Product.findOne({ user: id }).lean().exec()
+	if (product)
 		return res.status(400).json({ message: 'user have created products' })
 
 	const user = await User.findById(id).exec()
