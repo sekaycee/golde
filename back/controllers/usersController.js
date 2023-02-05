@@ -1,14 +1,14 @@
 const User = require('../models/User')
 const Product = require('../models/Product')
 const asyncHandler = require('express-async-handler')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 
 // @desc: Get all users
 // @route: GET /users
 // @access: Private
 const getAllUsers = asyncHandler(async (req, res) => {
 	const users = await User.find().select('-password').lean()
-	if (!users)
+	if (!users?.length)
 		return res.status(400).json({ message: 'no users found' })
 	res.json(users)
 })
