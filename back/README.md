@@ -10,27 +10,27 @@ Backend of the Golde IMS. Serve the APIs to the Frontend and connect to MongoDB.
 
 ## Usage
 
-Clone the repository with/without forking it
+1. Clone the repository with/without forking it
 
 ```
 $ git clone git@github.com:<username>/golde.git
 ```
 
-Replace `<username>` with yours.. if you forked the repo or `sekaycee` if you didn't
+2. Replace `<username>` with yours.. if you forked the repo or `sekaycee` if you didn't
 
-Navigate into the Backend directory by doing
+3. Navigate into the Backend directory by doing
 
 ```
 $ cd golde/back/
 ```
 
-Install the node dependencies in `package.json` by running
+4. Install the node dependencies in `package.json` by running
 
 ```
 $ npm install
 ```
 
-Once done.. you can try running the code in `development` mode by doing
+5. Once done.. you can try running the code in `development` mode by doing
 
 ```
 $ npm run dev
