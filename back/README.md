@@ -1,4 +1,4 @@
-# Golde - Server
+# Golde • Server
 
 Backend of the Golde IMS. Serve the APIs to the Frontend and connect to MongoDB.
 
