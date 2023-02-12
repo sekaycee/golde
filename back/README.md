@@ -16,7 +16,7 @@ Clone the repository with/without forking it
 $ git clone git@github.com:<username>/golde.git
 ```
 
-Replace <username> with yours.. if you forked the repo or `sekaycee` if you didn't
+Replace `<username>` with yours.. if you forked the repo or `sekaycee` if you didn't
 
 Navigate into the Backend directory by doing
 
