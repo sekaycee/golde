@@ -1,4 +1,4 @@
-# Goldev • Client
+# Golde • Client
 
 Frontend of the Golde IMS. Receive API data from the back and present aestethically to the front.
 
