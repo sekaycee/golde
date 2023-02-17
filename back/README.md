@@ -15,7 +15,7 @@ Backend of the Golde IMS. Serve the APIs to the Frontend and connect to MongoDB.
 ```
 $ git clone git@github.com:<username>/golde.git
 ```
-Replace `<username>` with yours.. if you forked the repo or `sekaycee` if you didn't
+... Replace `<username>` with yours if you forked the repo.. or `sekaycee` if you didn't
 
 2. Navigate into the Backend directory by doing
 ```
