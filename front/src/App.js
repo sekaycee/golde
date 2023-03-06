@@ -19,11 +19,11 @@ function App() {
 
 	  <Route path="users">
 	    <Route index element={<UsersList />} />
-	  <Route/>
+	  </Route>
 	  
 	  <Route path="products">
 	    <Route index element={<ProductsList />} />
-	  <Route/>
+	  </Route>
         </Route>
       </Route>
     </Routes>
